@@ -12,6 +12,6 @@ void setup() {
 }
 
 void loop() {
-	i = int Serial.read();
-	digital.write(led, i);
+	i = (int) Serial.read();
+	digitalWrite(led, i);
 }
